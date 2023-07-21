@@ -1,0 +1,72 @@
+.primero{
+    background-color: coral;
+    height: 50px;
+    width: 50px;
+  }
+  
+  .segundo{
+    background-color: cornflowerblue;
+    height: 50px;
+    width: 50px;
+  }
+  
+  .tercero{
+    border: darkkhaki;
+    background-color: darkseagreen;
+    height: 50px;
+    width: 50px;
+  }
+  
+  .contenedor{
+    border: 2px dashed darkkhaki;
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+  }
+  
+  #A1{
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  #C2{
+    display: flex;
+    justify-content: space-around;
+    align-self: center;
+    margin: 10px;
+  }
+  
+  #A1{
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  #C2{
+    display: flex;
+    justify-content: space-around;
+    align-self: center;
+  }
+  
+  #C3{
+    display: flex;
+    justify-content: space-around;
+    align-self: end;
+  }
+  
+  #A2{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  #D2{
+    width: 100%;
+  }
+  
+  #A3{
+    display: flex;
+    justify-content: end;
+    flex-direction: column-reverse;
+    align-items: end;
+  }

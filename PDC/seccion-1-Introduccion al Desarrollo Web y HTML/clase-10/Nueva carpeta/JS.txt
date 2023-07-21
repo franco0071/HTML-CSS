@@ -1,0 +1,44 @@
+const btnAnterior = document.getElementById('anterior');
+const btnSiguiente = document.getElementById('siguiente');
+const imagenPrincipal = document.getElementById('imagenPrincipal');
+
+btnAnterior.classList.add('anterior');
+btnSiguiente.classList.add('siguiente');
+
+const imagenes = [
+  'img1.jpg',
+  'img2.jpg',
+  'img3.jpg',
+  'img4.jpg',
+];
+
+let currentImageIndex = 0;
+
+function actualizarImagenPrincipal() {
+  imagenPrincipal.src = imagenes[currentImageIndex];
+}
+
+function mostrarImagenSiguiente() {
+  currentImageIndex++;
+  if (currentImageIndex >= imagenes.length) {
+    currentImageIndex = 0;
+  }
+  actualizarImagenPrincipal();
+}
+
+function mostrarImagenAnterior() {
+  currentImageIndex--;
+  if (currentImageIndex < 0) {
+    currentImageIndex = imagenes.length - 1;
+  }
+  actualizarImagenPrincipal();
+}
+
+btnAnterior.addEventListener('click', mostrarImagenAnterior);
+btnSiguiente.addEventListener('click', mostrarImagenSiguiente);
+
+actualizarImagenPrincipal();
+
+// Cambiar de imagen automáticamente cada 3 segundos
+setInterval(mostrarImagenSiguiente, 3000);
+

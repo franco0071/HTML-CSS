@@ -1,0 +1,35 @@
+#slider-image {
+    max-width: 99%;
+    max-height: 99%;
+}
+
+.image-slider {
+    background-color: black;
+    height: 600px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.button-slider {
+    position: absolute;
+    height: 100%;
+    width: 10%;
+    background-color: transparent;
+    border: none;
+    font-size: 60px;
+    color: white;
+}
+
+#btn-anterior {
+    left: 0;
+}
+
+#btn-siguiente {
+    right: 0;
+}
+
+.button-slider:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+}

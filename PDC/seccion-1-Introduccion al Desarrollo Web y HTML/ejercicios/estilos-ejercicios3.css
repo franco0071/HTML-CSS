@@ -1,0 +1,7 @@
+contenedor
+{background-color: blueviolet;}
+@media (max-width: 600px) {
+    body {
+      background-color: #87ceeb;
+    }
+  }
